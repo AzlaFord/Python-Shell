@@ -6,9 +6,9 @@ def main():
 
     sys.stdout.write("$ ")
     sys.stdout.flush()
+    comand = input()
 
-
-    input()
+    print(f"{comand}: command not found")
 
 
 if __name__ == "__main__":
