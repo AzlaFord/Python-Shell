@@ -2,18 +2,13 @@ import sys
 
 
 def main():
-
-
-
-    
-    valid_comands = {}
-
     while True:
         sys.stdout.write("$ ")
         sys.stdout.flush()
         user_comands = input()
         if command := input().strip():
-            if user_comands == 'exit':
+
+            if user_comands == 'exit 0':
                 sys.exit()
                 
             else:
