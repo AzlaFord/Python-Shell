@@ -5,7 +5,6 @@ def main():
     while True:
         sys.stdout.write("$ ")
         sys.stdout.flush()
-        user_comands = input()
         if user_comands := input().strip():
 
             if user_comands == 'exit 0':
