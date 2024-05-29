@@ -6,7 +6,7 @@ def main():
         sys.stdout.write("$ ")
         sys.stdout.flush()
         user_comands = input()
-        if command := input().strip():
+        if user_comands := input().strip():
 
             if user_comands == 'exit 0':
                 sys.exit(0)
