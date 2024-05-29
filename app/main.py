@@ -12,11 +12,12 @@ def main():
         sys.stdout.write("$ ")
         sys.stdout.flush()
         user_comands = input()
-        if user_comands == 'exit':
-            sys.exit()
-            
-        else:
-            print(f"{user_comands}: command not found")
+        if command := input().strip():
+            if user_comands == 'exit':
+                sys.exit()
+                
+            else:
+                print(f"{user_comands}: command not found")
 
 
 
