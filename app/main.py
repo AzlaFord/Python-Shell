@@ -13,8 +13,9 @@ def main():
             if user_comands == 'exit 0':
                 sys.exit(0)
             elif user_comands.startswith('echo '):
-                echo_command = user_comands[5:]
-                print(echo_command)    
+                # Extrage textul după 'echo ' și îl afișează
+                echo_text = user_comands[5:]
+                print(echo_text)  
             else:
                 print(f"{user_comands}: command not found")
 
