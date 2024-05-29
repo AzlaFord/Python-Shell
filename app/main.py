@@ -9,7 +9,7 @@ def main():
         if command := input().strip():
 
             if user_comands == 'exit 0':
-                sys.exit()
+                sys.exit(0)
                 
             else:
                 print(f"{user_comands}: command not found")
